@@ -186,7 +186,7 @@ Waypoint</text></img>
 			It's always the top left corner of the icon, so you need to consider the icon's size when you enter the values. -->
   <osd font_size="350" speed_exceed_limit_offset="10" y="-375" h="120" speed_exceed_limit_offset_strict="0" x="-120" speed_exceed_limit_percentage="0" w="120" announce_on="1" name="my_speed" type="speed_warner" strict_mode="1" enabled="yes"/>
   <osd font_size="600" y="15" h="120" label="Next: ${navigation.item[1].street_name} ${navigation.item[1].street_name_systematic}" x="0" background_color="#00000077" text_color="#ffffff" w="1300" align="5" type="text" enabled="yes"/>
-  <osd font_size="600" y="-95" h="1200" label="Now: ${navigation.item.street_name} ${navigation.item.street_name_systematic" x="128" background_color="#00000077" text_color="#ffffff" w="1160" align="5" name="test" type="text" enabled="yes"/>
+  <osd font_size="600" y="-95" h="1200" label="Now: ${navigation.item.street_name} ${navigation.item.street_name_systematic}" x="128" background_color="#00000077" text_color="#ffffff" w="1160" align="5" name="test" type="text" enabled="yes"/>
   <osd command="zoom_in()" y="260" x="0" h="80" w="80" background_color="11111111" src="country_NL.svg" osd_configuration="1" type="button"/>
   <!-- Vehicle with GPS enabled for gpsd on unix -->
   <vehicle follow="1" source="android:" active="1" name="Local GPS" enabled="yes" profilename="car">
