@@ -178,15 +178,16 @@ Waypoint</text></img>
   <osd font_size="600" y="135" h="160" label="${navigation.item.destination_length[named]}\n${navigation.item.destination_time[arrival]}" x="-200" w="240" osd_configuration="1" type="text"/>
   <osd y="-128" h="88" x="0" w="128" osd_configuration="1" type="navigation_next_turn" icon_src="%s_wh_64_64.png"/>
   <osd font_size="400" y="-40" h="40" label="${navigation.item[1].length[named]}" x="0" w="128" osd_configuration="1" type="text"/>
-  <osd command="zoom_in()" y="100" x="0" src="gui_zoom_in_96_96.png" osd_configuration="1" type="button"/>
-  <osd command="zoom_out()" y="180" x="0" src="gui_zoom_out_96_96.png" osd_configuration="1" type="button"/>
+  <osd command="zoom_in()" y="140" x="0" src="gui_zoom_in_96_96.png" osd_configuration="1" type="button"/>
+  <osd command="zoom_out()" y="220" x="0" src="gui_zoom_out_96_96.png" osd_configuration="1" type="button"/>
   <osd command="follow=0;set_center_cursor()" y="80" enable_expression="follow>1" x="-120" src="cursor_64_64.png" type="button"/>
   <!-- Commands include gui_internal_menu, gui_internal_fullscreen, zoom_in and zoom_out.
 			Usage of negative values change the button origins. x="0" y="0" specifies the top left, x="-0" y="-0" the bottom right corner.
 			It's always the top left corner of the icon, so you need to consider the icon's size when you enter the values. -->
   <osd font_size="350" speed_exceed_limit_offset="10" y="-375" h="120" speed_exceed_limit_offset_strict="0" x="-120" speed_exceed_limit_percentage="0" w="120" announce_on="1" name="my_speed" type="speed_warner" strict_mode="1" enabled="yes"/>
-  <osd font_size="600" y="15" h="120" label="Next: ${navigation.item[1].street_nmame}" x="0" background_color="#00000077" text_color="#ffffff" w="1300" align="5" type="text" enabled="yes"/>
-  <osd font_size="600" y="-95" h="1200" label="Now: ${navigation.item.street_name} " x="128" background_color="#00000077" text_color="#ffffff" w="1160" align="5" name="test" type="text" enabled="yes"/>
+  <osd font_size="600" y="15" h="120" label="Next: ${navigation.item[1].street_name} ${navigation.item[1].street_name_systematic}" x="0" background_color="#00000077" text_color="#ffffff" w="1300" align="5" type="text" enabled="yes"/>
+  <osd font_size="600" y="-95" h="1200" label="Now: ${navigation.item.street_name} ${navigation.item.street_name_systematic" x="128" background_color="#00000077" text_color="#ffffff" w="1160" align="5" name="test" type="text" enabled="yes"/>
+  <osd command="zoom_in()" y="260" x="0" h="80" w="80" background_color="11111111" src="country_NL.svg" osd_configuration="1" type="button"/>
   <!-- Vehicle with GPS enabled for gpsd on unix -->
   <vehicle follow="1" source="android:" active="1" name="Local GPS" enabled="yes" profilename="car">
    <!-- Vehicle with GPS enabled for direct communication on windows. Remove the line above if you use this. -->
